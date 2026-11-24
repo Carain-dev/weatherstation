@@ -37,13 +37,12 @@ A simple embedded systems project built using the **Raspberry Pi Pico** and **Mi
 ## 📂 Project Structure
 
 ```
-Weather-Station-Pico/
-│
-├── main.py                 # Main application
-├── pico_i2c_lcd.py         # LCD library
-├── lcd_api.py              # LCD API library
-├── README.md
+weatherstation/
+├── main.py      # Main application (sensor reading, LCD output, error handling)
+└── README.md
 ```
+
+`main.py` also needs two LCD driver files on the Pico, `lcd_api.py` and `pico_i2c_lcd.py`. These are the widely used open-source MicroPython I2C LCD driver files and are not copied into this repo. Upload them to the Pico alongside `main.py` using Thonny.
 
 ---
 
@@ -89,8 +88,7 @@ Weather-Station-Pico/
 
 ```
 Time: 10:30:04
-Temperature: 29°C
-Humidity: 67%
+T: 29C  H: 67%
 ```
 
 LCD Display
